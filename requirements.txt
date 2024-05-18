@@ -1,6 +1,6 @@
-wikipedia
+wikipedia==1.4.0
 pytest==8.2.0
-pytest-conv==5.0.0
-pylint==3.2.0
-black==24.4.2 
-fire==0.6.0
+pytest-cov==4.0.0
+pylint==2.13.9
+black==23.3.0
+fire==0.4.0

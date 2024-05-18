@@ -1,0 +1,38 @@
+
+name: python test with Github Actions
+
+on: [ push ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    # environment: production
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: setup python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python version: 3.8
+        
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        
+    - name: lint with pylint
+      run: |
+        # make lint 
+        
+    - name: Test with pytest
+      run: |
+        # make test 
+        
+    - name: Format code
+      run: |
+        # make format 
+     
+   
